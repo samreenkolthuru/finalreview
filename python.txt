@@ -1,0 +1,166 @@
+nafeesa8642@Nafee:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "hello"
+'hello'
+>>> 56+96
+152
+>>> 73-78
+-5
+>>> 56*74
+4144
+>>> 76/9
+8.444444444444445
+>>> 76//9
+8
+>>> 89%8
+1
+>>> 7**4
+2401
+>>> no=4
+>>> if(no <10):
+...     print(no, 'single digit')
+... else:
+...     print(no, 'Multi digit')
+...
+4 single digit
+>>> no=56
+>>> if(no <10):
+...     print(no, 'single digit')
+... else:
+...     print(no, 'Multi digit')
+...
+56 Multi digit
+>>> no=786
+>>> if(no <10):
+...     print(no, 'single digit')
+... elif(no<100):
+...     print(no, 'double digit')
+... elif(no<1000):
+...     print(no, 'triple digit')
+... elif(no<10000):
+...     print(no, 'multiple digit')
+... else:
+...     print(no, 'more than 5 digits')
+...
+786 triple digit
+>>> friends=['Raj','Aman','Vijay',Shannu',Parvathi','Bindu']
+  File "<stdin>", line 1
+    friends=['Raj','Aman','Vijay',Shannu',Parvathi','Bindu']
+                                        ^
+SyntaxError: invalid syntax
+>>> friends=['Raj','Aman','Vijay','Shannu','Parvathi','Bindu']
+>>> friends[5]
+'Bindu'
+>>> friends[2]
+'Vijay'
+>>> for name in friends:
+...     print(name)
+...
+Raj
+Aman
+Vijay
+Shannu
+Parvathi
+Bindu
+>>> name= input("What is your name")
+What is your name Nafeesa
+>>> print(name)
+ Nafeesa
+>>> #Fibonacci series
+>>> a,b=9,8
+>>> n=16
+>>> while(a<n):
+...     print(a, end='')
+...     a,b = b, a+b
+...
+98>>> 2
+2
+>>> a,b=0.1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot unpack non-iterable float object
+>>> a,b=0,1
+>>> n=16
+>>> while(a<n):
+...     print(a, end=' ')
+...     a,b = b,a+b
+...
+>>> def calculate(no):
+...     if(no>100):
+...             print(no*no)
+...     else:
+...             print(no+no)
+...
+>>> calculate(200)
+40000
+>>> calculate(999)
+998001
+>>> calculate(99)
+198
+>>> def hellofunc(n,m):
+...     if(n>m):
+...             print(str(n)+'is great')
+...     else:
+...             print(str(m)+'is great')
+...
+>>> hellofunc(5,15)
+15is great
+>>> hellofunc(56,90)
+90is great
+>>> class product:
+...     def setproduct(self,name,price,qty):
+...             self.name=name
+...             self.price=price
+...             self.qty=qty
+... def getproduct(self):
+  File "<stdin>", line 6
+    def getproduct(self):
+    ^
+SyntaxError: invalid syntax
+>>> class product:
+...     def setproduct(self,name,price,qty):
+...             self.name=name
+...             self.price=price
+...             self.qty=qty
+...     def getproduct(self):
+...             print(self.name)
+...             print(self.price)
+...             print(self.qty)
+...
+>>> prd = product()
+>>> prd.setproduct('cake',4000,40)
+>>> prd.getproduct()
+cake
+4000
+40
+>>> f=open('//home//nafeesa8642//temp//mix.txt')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '//home//nafeesa8642//temp//mix.txt'
+>>> f=open('//home//nafeesa8642//temp')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IsADirectoryError: [Errno 21] Is a directory: '//home//nafeesa8642//temp'
+>>> f=open('//home//nafeesa8642//myinfo.txt')
+>>> print(f)
+<_io.TextIOWrapper name='//home//nafeesa8642//myinfo.txt' mode='r' encoding='UTF-8'>
+>>> #Importing math class
+>>> from math import *
+>>> a =pi
+>>> print(a)
+3.141592653589793
+>>> print(sqrt(16))
+4.0
+>>> print(pow(2,3))
+8.0
+>>> print(round(27.998765))
+28
+>>> print(floor(776.9086))
+776
+>>> print(ceil(52.0001))
+53
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()

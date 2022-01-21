@@ -1,0 +1,15 @@
+Docker - A platform for building, running, shipping apps in a consistant manner.
+It solves the issue of it runs on a development machine and not in target machine.
+
+Reasons: one or more files are missing
+Software version mismatch
+different config setting
+Benefits:
+1. We can easily package up our app in docker, so it works on any machine. 
+2. If someone joins our team, they do not have to spend half a day setting up their machine to run our app, they do not have to install and comfigire all these dependencies. They can simply tell docker to bring up our app and docker itself will automatically download and run these dependencies in an isolated environment called container. This isolated container  allows multiple apps to use different versions of some software side by side. For ex: if an app needs node version 14 and another app needs node version9, these two can run side by side in the same machine without any issue and messing with each other.
+3. IF we do not need any app, we can simply remove it and all it's dependencies with single command in one go.
+
+
+So, in a project we will be building and running many apps and hence our machine gets cluttered with many libraries and files and we do not know which files to delete and we will always be afraid of messing up other apps while trying to delete any unnecessary app. But with docker we do not have to worry about that as each app runs in an separate isolated container
+
+

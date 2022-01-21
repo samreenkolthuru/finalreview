@@ -1,0 +1,115 @@
+# my global config
+global:
+  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+  # Attach these labels to any time series or alerts when communicating with
+  # external systems (federation, remote storage, Alertmanager).
+  external_labels:
+      monitor: 'codelab-monitor'
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  # - "first.rules"
+  # - "second.rules"
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'prometheus'
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'docker'
+         # metrics_path defaults to '/metrics'
+         # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ['localhost:9323']
+
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\tmp> cd ..
+PS C:\> docker service create --replicas 1 --name my-prometheus --mount type=bind,source=C:/tmp/prometheus.yml,destination=/etc/prometheus/prometheus.yml --publish published=9090,target=9090,protocol=tcp prom/prometheus
+Error response from daemon: rpc error: code = InvalidArgument desc = port '9090' is already in use by service 'my-prometheus' (d6erv84o95wo75dcechu82w0w) as an ingress poPS C:\> docker service remove ping_service
+Error: No such service: ping_service
+PS C:\> docker service create `
+>>   --replicas 10 `
+>>   --name ping_service `
+>>   alpine ping docker.com
+image alpine:latest could not be accessed on a registry to record
+its digest. Each node will access alpine:latest independently,
+possibly leading to different nodes running different
+versions of the image.
+
+mdrhl6p890ivoyirqy46zauw1
+overall progress: 2 out of 10 tasks
+1/10: running   [==================================================>]
+2/10: starting  [============================================>      ]
+3/10: preparing [=================================>                 ]
+4/10: preparing [=================================>                 ]
+5/10: starting  [============================================>      ]
+6/10: starting  [============================================>      ]
+7/10: preparing [=================================>                 ]
+8/10: running   [==================================================>]
+9/10: starting  [============================================>      ]
+10/10: ready     [======================================>            ]
+PS C:\> docker service remove ping_service
+ping_service
+PS C:\> docker service create `
+>>   --replicas 10 `
+>>   --name ping_service `
+>>   alpine ping docker.com
+image alpine:latest could not be accessed on a registry to record
+its digest. Each node will access alpine:latest independently,
+possibly leading to different nodes running different
+versions of the image.
+
+pcb40vmc2jqgepkg54y24amgn
+overall progress: 4 out of 10 tasks
+1/10: starting  [============================================>      ]
+2/10: starting  [============================================>      ]
+3/10: running   [==================================================>]
+4/10: running   [==================================================>]
+5/10: running   [==================================================>]
+6/10: starting  [============================================>      ]
+7/10: running   [==================================================>]
+8/10: starting  [============================================>      ]
+9/10: starting  [============================================>      ]
+10/10: starting  [============================================>      ]
+Error response from daemon: i/o timeout
+PS C:\> docker service remove ping_service
+ping_service
+PS C:\> docker service create `
+>>   --replicas 10 `
+>>   --name ping_service `
+>>   alpine ping docker.com
+image alpine:latest could not be accessed on a registry to record
+its digest. Each node will access alpine:latest independently,
+possibly leading to different nodes running different
+versions of the image.
+
+r4l6s51oq1wcngkrzbj8ox8b0
+overall progress: 10 out of 10 tasks 
+1/10: running   [==================================================>]
+2/10: running   [==================================================>]
+3/10: running   [==================================================>]
+4/10: running   [==================================================>]
+5/10: running   [==================================================>]
+6/10: running   [==================================================>]
+7/10: running   [==================================================>]
+8/10: running   [==================================================>]
+9/10: running   [==================================================>]
+10/10: running   [==================================================>] 
+verify: Service converged

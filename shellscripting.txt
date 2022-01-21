@@ -1,0 +1,327 @@
+nafeesa8642@Nafee:~$ echo $SHELL
+/bin/bash
+nafeesa8642@Nafee:~$ nano file.sh
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano file.sh
+nafeesa8642@Nafee:~$ cat file.sh
+#!/bin/bash
+echo Welcome to Shell scripting
+ls
+echo list all the directories
+Name= Nafeesa
+City= Bangalore
+echo "$Name $City"
+
+nafeesa8642@Nafee:~$ chmod +x file.sh
+nafeesa8642@Nafee:~$ ./file.sh
+Welcome to Shell scripting
+ABCimpex          hellofunc.sh    myfilevars.sh       sam.sh
+args.sh           helloscript.sh  myfilewithvars.sh   sam.yml
+bash_alias        hi.sh           myfilewithvars1.sh  sam_orchestrate.yml
+cont.yml          ifelse.sh       myinfo.txt          samrole
+decision.sh       input.sh        myinfo1.txt         selfile.sh
+demo.sh           main.yml        nafee.yml           stringdemo.sh
+evenodd.sh        multiples.sh    nafeesa_playbook    temp
+example.sh        mycmds.sh       nano.save           vardemo.sh
+file.sh           mycmds.sh.save  nano.save.1         whiledemo.sh
+filewithvars.sh   mycommands.sh   odd.sh              yourfile
+food.sh           mydata.sh       parent
+friends.sh        mydata1.sh      parurole
+function_demo.sh  myfile.sh       reading.sh
+list all the directories
+./file.sh: line 5: Nafeesa: command not found
+./file.sh: line 6: Bangalore: command not found
+
+nafeesa8642@Nafee:~$ nano file.sh
+nafeesa8642@Nafee:~$ ./file.sh
+Welcome to Shell scripting
+ABCimpex          hellofunc.sh    myfilevars.sh       sam.sh
+args.sh           helloscript.sh  myfilewithvars.sh   sam.yml
+bash_alias        hi.sh           myfilewithvars1.sh  sam_orchestrate.yml
+cont.yml          ifelse.sh       myinfo.txt          samrole
+decision.sh       input.sh        myinfo1.txt         selfile.sh
+demo.sh           main.yml        nafee.yml           stringdemo.sh
+evenodd.sh        multiples.sh    nafeesa_playbook    temp
+example.sh        mycmds.sh       nano.save           vardemo.sh
+file.sh           mycmds.sh.save  nano.save.1         whiledemo.sh
+filewithvars.sh   mycommands.sh   odd.sh              yourfile
+food.sh           mydata.sh       parent
+friends.sh        mydata1.sh      parurole
+function_demo.sh  myfile.sh       reading.sh
+list all the directories
+Nafeesa Bangalore
+nafeesa8642@Nafee:~$ nano reading.sh
+nafeesa8642@Nafee:~$ chmod +x reading.sh
+nafeesa8642@Nafee:~$ ./reading.sh
+What is your name?
+Sam
+Where are you from?
+AP
+What is your favorite food?
+Uppit
+nafeesa8642@Nafee:~$ nano helloscript.sh
+nafeesa8642@Nafee:~$ chmod 774 helloscript.sh
+nafeesa8642@Nafee:~$ ./helloscript.sh 2 4 6 7 8 3 9 67 34 26
+The script title is ./helloscript.sh
+The first argument is 2
+The second argument is 4
+The third argument is 6
+The fourth argument is 7
+The fifth argument is 8
+The sixth argument is 3
+The seventh argument is 9
+The eightth argument is 67
+The ninth argument is 34
+the tenth arguemtn is 26
+/$ 481 is the PID of the script
+/# The total number of parameters in the script 10
+nafeesa8642@Nafee:~$ cat helloscript.sh
+#Script parameters example
+#!/bin/bash
+echo The script title is $0
+echo The first argument is $1
+echo The second argument is $2
+echo The third argument is $3
+echo The fourth argument is $4
+echo The fifth argument is $5
+echo The sixth argument is $6
+echo The seventh argument is $7
+echo The eightth argument is $8
+echo The ninth argument is $9
+echo the tenth arguemtn is ${10}
+echo /$ $$ is the PID of the script
+echo /# The total number of parameters in the script $#
+
+nafeesa8642@Nafee:~$ touch .bash_aliases
+nafeesa8642@Nafee:~$ nano .bash_aliases
+nafeesa8642@Nafee:~$ chmod 774 .bash_aliases
+nafeesa8642@Nafee:~$ ./.bash_aliases
+./.bash_aliases: line 1: alias: ll: not found
+./.bash_aliases: line 1: alias: =ls -l: not found
+./.bash_aliases: line 2: alias: la: not found
+./.bash_aliases: line 2: alias: =ls -a: not found
+./.bash_aliases: line 3: alias: lh: not found
+./.bash_aliases: line 3: alias: =ls -h: not found
+nafeesa8642@Nafee:~$ dis
+
+Command 'dis' not found, did you mean:
+
+  command 'vis' from deb vis (0.5+ts-3)
+  command 'di' from deb di (4.47-1)
+  command 'fis' from deb redboot-tools (0.7build3)
+  command 'dir' from deb coreutils (8.30-3ubuntu2)
+  command 'dist' from deb mmh (0.4-2)
+  command 'dist' from deb nmh (1.7.1-6)
+  command 'dms' from deb anacrolix-dms (1.1.0-1)
+  command 'dig' from deb bind9-dnsutils (1:9.16.1-0ubuntu2.9)
+  command 'dia' from deb dia (0.97.3+git20160930-9)
+  command 'dish' from deb dish (1.19.1-1)
+  command 'gdis' from deb gdis (0.90-5build1)
+  command 'dcs' from deb drbl (2.30.5-1)
+  command 'din' from deb din (5.2.1-6build1)
+
+Try: sudo apt install <deb name>
+
+nafeesa8642@Nafee:~$ dir
+ABCimpex          hellofunc.sh    myfilevars.sh       sam.sh
+args.sh           helloscript.sh  myfilewithvars.sh   sam.yml
+bash_alias        hi.sh           myfilewithvars1.sh  sam_orchestrate.yml
+cont.yml          ifelse.sh       myinfo.txt          samrole
+decision.sh       input.sh        myinfo1.txt         selfile.sh
+demo.sh           main.yml        nafee.yml           stringdemo.sh
+evenodd.sh        multiples.sh    nafeesa_playbook    temp
+example.sh        mycmds.sh       nano.save           vardemo.sh
+file.sh           mycmds.sh.save  nano.save.1         whiledemo.sh
+filewithvars.sh   mycommands.sh   odd.sh              yourfile
+food.sh           mydata.sh       parent
+friends.sh        mydata1.sh      parurole
+function_demo.sh  myfile.sh       reading.sh
+nafeesa8642@Nafee:~$ echo $SHELL
+/bin/bash
+nafeesa8642@Nafee:~$ ls
+ABCimpex          hellofunc.sh    myfilevars.sh       sam.sh
+args.sh           helloscript.sh  myfilewithvars.sh   sam.yml
+bash_alias        hi.sh           myfilewithvars1.sh  sam_orchestrate.yml
+cont.yml          ifelse.sh       myinfo.txt          samrole
+decision.sh       input.sh        myinfo1.txt         selfile.sh
+demo.sh           main.yml        nafee.yml           stringdemo.sh
+evenodd.sh        multiples.sh    nafeesa_playbook    temp
+example.sh        mycmds.sh       nano.save           vardemo.sh
+file.sh           mycmds.sh.save  nano.save.1         whiledemo.sh
+filewithvars.sh   mycommands.sh   odd.sh              yourfile
+food.sh           mydata.sh       parent
+friends.sh        mydata1.sh      parurole
+function_demo.sh  myfile.sh       reading.sh
+nafeesa8642@Nafee:~$ nano ifelse.sh
+nafeesa8642@Nafee:~$ chmod +x ifelse.sh
+nafeesa8642@Nafee:~$ cat ifelse.sh
+#!/bin/bash
+echo enter a name1:
+read name1
+echo enter a name2:
+read name2
+if [ $name1 = $name2 ]
+        then echo "Yay, they are a match!"
+else
+        echo "Boo, they are not a match!"
+fi
+
+nafeesa8642@Nafee:~$ ./ifelse.sh
+enter a name1:
+Bharath
+enter a name2:
+Bharath
+Yay, they are a match!
+nafeesa8642@Nafee:~$ ./ifelse.sh
+enter a name1:
+Sindhu meenon
+enter a name2:
+Meenon sindhu
+./ifelse.sh: line 6: [: too many arguments
+Boo, they are not a match!
+nafeesa8642@Nafee:~$ nano decision.sh
+nafeesa8642@Nafee:~$ cat decision.sh
+#!/bin/bash
+echo "demo of if -else"
+echo "enter a fruit name"
+read fruit
+if [ $fruit = mango ]
+        then echo "I like mangoes"
+elif [$fruit = orange ]
+        then echo "I love orange because they are juicy and healthy"
+elif [$fruit = strawberry ]
+        then echo "I love the color of strawberry"
+        else echo "I also love this $fruit"
+fi
+
+
+nafeesa8642@Nafee:~$ chmod +x decision.sh
+nafeesa8642@Nafee:~$ ./decision.sh
+demo of if -else
+enter a fruit name
+stawberry
+./decision.sh: line 7: [stawberry: command not found
+./decision.sh: line 9: [stawberry: command not found
+I also love this stawberry
+nafeesa8642@Nafee:~$ nano decision.sh
+nafeesa8642@Nafee:~$ ./decision.sh
+demo of if -else
+enter a fruit name
+stawberry
+I like mangoes
+nafeesa8642@Nafee:~$ nano demo.sh
+nafeesa8642@Nafee:~$ cat forloop.sh
+echo "for loop demo"
+for((n=1; n<6; n++))
+        do
+                echo "enter a number"
+                read number
+                echo "$n number is $number"
+        done
+nafeesa8642@Nafee:~$ chmod +x forloop.sh
+nafeesa8642@Nafee:~$ ./forloop.sh
+for loop demo
+enter a number
+64
+1 number is 64
+enter a number
+80
+2 number is 80
+enter a number
+37
+3 number is 37
+enter a number
+86
+4 number is 86
+enter a number
+56
+5 number is 56
+nafeesa8642@Nafee:~$ nano hi.sh
+nafeesa8642@Nafee:~$ chmod +x hi.sh
+nafeesa8642@Nafee:~$ ./hi.sh
+enter some no
+776
+welcome 1 time 776
+enter some no
+908
+welcome 2 time 908
+enter some no
+786
+welcome 3 time 786
+enter some no
+465
+welcome 4 time 465
+nafeesa8642@Nafee:~$ ls
+ABCimpex         function_demo.sh  myfile.sh           reading.sh
+args.sh          hellofunc.sh      myfilevars.sh       sam.sh
+bash_alias       helloscript.sh    myfilewithvars.sh   sam.yml
+cont.yml         hi.sh             myfilewithvars1.sh  sam_orchestrate.yml
+decision.sh      ifelse.sh         myinfo.txt          samrole
+demo.sh          input.sh          myinfo1.txt         selfile.sh
+evenodd.sh       main.yml          nafee.yml           stringdemo.sh
+example.sh       multiples.sh      nafeesa_playbook    temp
+file.sh          mycmds.sh         nano.save           vardemo.sh
+filewithvars.sh  mycmds.sh.save    nano.save.1         whiledemo.sh
+food.sh          mycommands.sh     odd.sh              yourfile
+forloop.sh       mydata.sh         parent
+friends.sh       mydata1.sh        parurole
+nafeesa8642@Nafee:~$ nano whiledemo.sh
+nafeesa8642@Nafee:~$ chmod +x whiledemo.sh
+nafeesa8642@Nafee:~$ ./whiledemo.sh
+demo of while loop
+./whiledemo.sh: line 3: no: command not found
+no is
+no is 1
+no is 2
+no is 3
+no is 4
+nafeesa8642@Nafee:~$ nano whiledemo.sh
+nafeesa8642@Nafee:~$ ./whiledemo.sh
+demo of while loop
+no is 1
+no is 2
+no is 3
+no is 4
+nafeesa8642@Nafee:~$ nano stringdemo.sh
+nafeesa8642@Nafee:~$ chmod forarray.sh
+chmod: missing operand after ‘forarray.sh’
+Try 'chmod --help' for more information.
+nafeesa8642@Nafee:~$ chmod +x forarray.sh
+nafeesa8642@Nafee:~$ ./forarray.sh
+nafeesa8642@Nafee:~$ cat forarray.sh
+#!/bin/bash
+STATESINDIA=("Andhrapradesh" "Telangana" "Karnataka" "Kerala" "Tamilnadu")
+for state in "${STATESINIDA[@]}"
+        do
+                echo "$state"
+        done
+nafeesa8642@Nafee:~$ ./forarray.sh
+nafeesa8642@Nafee:~$
+nafeesa8642@Nafee:~$ nano stringdemo.sh
+nafeesa8642@Nafee:~$ ./forarray.sh
+nafeesa8642@Nafee:~$ nano function_demo.sh
+nafeesa8642@Nafee:~$ chmod +x function_demo.sh
+nafeesa8642@Nafee:~$ ./function_demo.sh
+./function_demo.sh: line 9: syntax error: unexpected end of file
+nafeesa8642@Nafee:~$ nano function_demo.sh
+nafeesa8642@Nafee:~$ ./function_demo.sh
+./function_demo.sh: line 8: syntax error near unexpected token `1'
+./function_demo.sh: line 8: `myfunction(1)'
+nafeesa8642@Nafee:~$ nano function_demo.sh
+nafeesa8642@Nafee:~$ ./function_demo.sh
+./function_demo.sh: line 9: syntax error near unexpected token `}'
+./function_demo.sh: line 9: `}'
+nafeesa8642@Nafee:~$ nano function_demo.sh
+nafeesa8642@Nafee:~$ ./function_demo.sh
+nafeesa8642@Nafee:~$ nano function_demo.sh
+nafeesa8642@Nafee:~$ ./function_demo.sh
+./function_demo.sh: line 10: syntax error: unexpected end of file
+nafeesa8642@Nafee:~$ nano function_demo.sh
+nafeesa8642@Nafee:~$ ./function_demo.sh
+demo of functions
+welcome to all bash scripting
+This is function body
+argument 1 is

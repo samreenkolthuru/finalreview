@@ -1,0 +1,1341 @@
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.10.16.3-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Jan 20 10:09:38 IST 2022
+
+  System load:  0.08               Processes:             13
+  Usage of /:   0.7% of 250.98GB   Users logged in:       0
+  Memory usage: 9%                 IPv4 address for eth0: 172.23.97.110
+  Swap usage:   0%
+
+99 updates can be applied immediately.
+39 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+This message is shown once a day. To disable it please create the
+/home/nafeesa8642/.hushlogin file.
+alias ll='ls -alF'
+-bash: alias: =ls -l: not found
+alias la='ls -A'
+-bash: alias: =ls -a: not found
+-bash: alias: lh: not found
+-bash: alias: =ls -h: not found
+nafeesa8642@Nafee:~$ pwd
+/home/nafeesa8642
+nafeesa8642@Nafee:~$ ls
+ABCimpex          hellofunc.sh    myfile.sh           sam.sh
+args.sh           helloscript.sh  myfilevars.sh       sam.yml
+bash_alias        hi.sh           myfilewithvars.sh   sam_orchestrate.yml
+cont.yml          ifelse.sh       myfilewithvars1.sh  samrole
+decision.sh       input.sh        myinfo1.txt         selfile.sh
+demo.sh           main.yml        nafee.yml           stringdemo.sh
+evenodd.sh        multiples.sh    nafeesa_playbook    temp
+example.sh        mycmds.sh       nano.save           vardemo.sh
+filewithvars.sh   mycmds.sh.save  nano.save.1         whiledemo.sh
+food.sh           mycommands.sh   odd.sh              yourfile
+friends.sh        mydata.sh       parurole
+function_demo.sh  mydata1.sh      reading.sh
+nafeesa8642@Nafee:~$ cd temp
+nafeesa8642@Nafee:~/temp$ ls
+foldr1  mix.txt  sam1.txt
+nafeesa8642@Nafee:~/temp$ cd ..
+nafeesa8642@Nafee:~$ cd /
+nafeesa8642@Nafee:/$ pwd
+/
+nafeesa8642@Nafee:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+nafeesa8642@Nafee:/$ cd usr
+nafeesa8642@Nafee:/usr$ ls
+bin  config  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+nafeesa8642@Nafee:/usr$ cd sys
+-bash: cd: sys: No such file or directory
+nafeesa8642@Nafee:/usr$ cd ..
+nafeesa8642@Nafee:/$ cd sys
+nafeesa8642@Nafee:/sys$ ls
+block  bus  class  dev  devices  firmware  fs  kernel  module
+nafeesa8642@Nafee:/sys$ cd ..
+nafeesa8642@Nafee:/$ cd usr/local
+nafeesa8642@Nafee:/usr/local$ ls
+bin  etc  games  include  lib  man  sbin  share  src
+nafeesa8642@Nafee:/usr/local$ cd ..
+nafeesa8642@Nafee:/usr$ cd ..
+nafeesa8642@Nafee:/$ cd usr/games
+nafeesa8642@Nafee:/usr/games$ ls
+sl
+nafeesa8642@Nafee:/usr/games$ cd ..
+nafeesa8642@Nafee:/usr$ cd ..
+nafeesa8642@Nafee:/$ cd temp
+-bash: cd: temp: No such file or directory
+nafeesa8642@Nafee:/$ cd ..
+nafeesa8642@Nafee:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+nafeesa8642@Nafee:/$ cd ..
+nafeesa8642@Nafee:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+nafeesa8642@Nafee:/$ cd /
+nafeesa8642@Nafee:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+nafeesa8642@Nafee:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+nafeesa8642@Nafee:/$ cd
+nafeesa8642@Nafee:~$ ls
+ABCimpex     evenodd.sh        hellofunc.sh    multiples.sh    myfile.sh           nafeesa_playbook  sam.sh               temp
+args.sh      example.sh        helloscript.sh  mycmds.sh       myfilevars.sh       nano.save         sam.yml              vardemo.sh
+bash_alias   filewithvars.sh   hi.sh           mycmds.sh.save  myfilewithvars.sh   nano.save.1       sam_orchestrate.yml  whiledemo.sh
+cont.yml     food.sh           ifelse.sh       mycommands.sh   myfilewithvars1.sh  odd.sh            samrole              yourfile
+decision.sh  friends.sh        input.sh        mydata.sh       myinfo1.txt         parurole          selfile.sh
+demo.sh      function_demo.sh  main.yml        mydata1.sh      nafee.yml           reading.sh        stringdemo.sh
+nafeesa8642@Nafee:~$ mkdir -p parent/child
+nafeesa8642@Nafee:~$ ls
+ABCimpex          hellofunc.sh    myfile.sh           reading.sh
+args.sh           helloscript.sh  myfilevars.sh       sam.sh
+bash_alias        hi.sh           myfilewithvars.sh   sam.yml
+cont.yml          ifelse.sh       myfilewithvars1.sh  sam_orchestrate.yml
+decision.sh       input.sh        myinfo1.txt         samrole
+demo.sh           main.yml        nafee.yml           selfile.sh
+evenodd.sh        multiples.sh    nafeesa_playbook    stringdemo.sh
+example.sh        mycmds.sh       nano.save           temp
+filewithvars.sh   mycmds.sh.save  nano.save.1         vardemo.sh
+food.sh           mycommands.sh   odd.sh              whiledemo.sh
+friends.sh        mydata.sh       parent              yourfile
+function_demo.sh  mydata1.sh      parurole
+nafeesa8642@Nafee:~$ cd parent
+nafeesa8642@Nafee:~/parent$ ls
+child
+nafeesa8642@Nafee:~/parent$ cd ../..
+nafeesa8642@Nafee:/home$ pwd
+/home
+nafeesa8642@Nafee:/home$ cd ..
+nafeesa8642@Nafee:/$ echo "We can create a simple text file" > simple.txt
+-bash: simple.txt: Permission denied
+nafeesa8642@Nafee:/$ cd
+nafeesa8642@Nafee:~$ echo "We can create a simple text file" > simple.txt
+nafeesa8642@Nafee:~$ cat simple.txt
+We can create a simple text file
+nafeesa8642@Nafee:~$ echo "I am going to add some extra info" >> simple.txt
+nafeesa8642@Nafee:~$ cat simple.txt
+We can create a simple text file
+I am going to add some extra info
+nafeesa8642@Nafee:~$ cat my*
+echo "Welcome to shell scripting"
+echo "Shell scripting file will have executable linux commands"
+ls
+ls -l
+pwd
+man
+
+echo "Welcome to shell scripting"
+echo "Shell scripting file wecho "it displayed list of directories and files in this location"
+pwd
+
+#!/bin/bash
+echo We have seen something very strange in the woods.
+ls
+pwd
+touch mycommands.sh
+cat mycommands.sh
+
+#!/bin/bash
+echo "Mydata"
+idno=206280
+name=Nafeesa
+city=Tirupathi
+jobrole=Developer
+echo "$idno $name $city $jobrole"
+
+#!/bin/bash
+echo "What is your name?"
+read name
+echo "Where are you from?"
+read location
+
+#!/bin/bash
+echo we have seen something strange
+ls
+
+#!/bin/bash
+echo "mydata"
+name = "Nafeesa"
+city = "Trivandram"
+no = 206280
+salary = 3.5
+DOJ = "23 November"
+echo "$name $city $no $salary $DOJ"
+name = "Samreen"
+city = "Tirupathi"
+no = 206280
+salary = 46578
+joindate = "23 November 2021"
+echo "$name $city $no $salary $joindate"
+
+#!/bin/bash
+echo "mydata"
+name = Nafeesa
+city = Trivandram
+no = 206280
+salary = 3.5
+doj = 23 November
+echo "$name $city $no $salary $doj"
+
+Today's weather seems to be really chill and cool
+nafeesa8642@Nafee:~$ ls
+ABCimpex          hellofunc.sh    myfile.sh           reading.sh
+args.sh           helloscript.sh  myfilevars.sh       sam.sh
+bash_alias        hi.sh           myfilewithvars.sh   sam.yml
+cont.yml          ifelse.sh       myfilewithvars1.sh  sam_orchestrate.yml
+decision.sh       input.sh        myinfo1.txt         samrole
+demo.sh           main.yml        nafee.yml           selfile.sh
+evenodd.sh        multiples.sh    nafeesa_playbook    simple.txt
+example.sh        mycmds.sh       nano.save           stringdemo.sh
+filewithvars.sh   mycmds.sh.save  nano.save.1         temp
+food.sh           mycommands.sh   odd.sh              vardemo.sh
+friends.sh        mydata.sh       parent              whiledemo.sh
+function_demo.sh  mydata1.sh      parurole            yourfile
+nafeesa8642@Nafee:~$ mv simple.txt myinfo.txt
+nafeesa8642@Nafee:~$ cd temp
+nafeesa8642@Nafee:~/temp$ ls
+foldr1  mix.txt  sam1.txt
+nafeesa8642@Nafee:~/temp$ cp sam1.txt mix.txt
+nafeesa8642@Nafee:~/temp$ ls
+foldr1  mix.txt  sam1.txt
+nafeesa8642@Nafee:~/temp$ cat mix.txt
+Hi! welcome to linux session
+I will append this text file now
+Today's session was great!!
+nafeesa8642@Nafee:~/temp$ cat sam1.txt
+Hi! welcome to linux session
+I will append this text file now
+Today's session was great!!
+nafeesa8642@Nafee:~/temp$ cd foldr1
+nafeesa8642@Nafee:~/temp/foldr1$ ls
+foldr2  mix.txt  temp
+nafeesa8642@Nafee:~/temp/foldr1$ mv temp newtmp
+nafeesa8642@Nafee:~/temp/foldr1$ ls
+foldr2  mix.txt  newtmp
+nafeesa8642@Nafee:~/temp/foldr1$ cd ..
+nafeesa8642@Nafee:~/temp$ cd ..
+nafeesa8642@Nafee:~$ whoami
+nafeesa8642
+nafeesa8642@Nafee:~$ who
+nafeesa8642@Nafee:~$ w
+ 10:31:10 up  1:00,  0 users,  load average: 0.00, 0.03, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+nafeesa8642@Nafee:~$ id
+uid=1000(nafeesa8642) gid=1000(nafeesa8642) groups=1000(nafeesa8642),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1014(docker)
+nafeesa8642@Nafee:~$ man man
+nafeesa8642@Nafee:~$ cd /
+nafeesa8642@Nafee:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+nafeesa8642@Nafee:/$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+nafeesa8642:x:1000:1000:,,,:/home/nafeesa8642:/bin/bash
+usr1:x:1001:1001::/home/usr1:/bin/sh
+usr2:x:1002:1002::/home/usr2:/bin/sh
+usr3:x:1003:1003::/home/usr3:/bin/sh
+usr4:x:1004:1004::/home/usr4:/bin/sh
+user1:x:1005:1005::/home/user1:/bin/sh
+user2:x:1006:1006::/home/user2:/bin/sh
+user3:x:1007:1007::/home/user3:/bin/sh
+user4:x:1008:1008::/home/user4:/bin/sh
+shabnam:x:1009:1009:first user,,,:/home/shabnam:/bin/bash
+rahib:x:1010:1010:second user,,,:/home/rahib:/bin/bash
+pavitra:x:1011:1011:third user,,,:/home/pavitra:/bin/bash
+pavan:x:1012:1012:fourth user,,,:/home/pavan:/bin/bash
+timjag:x:1013:1013:new user,,,:/home/timjag:/bin/bash
+fazil:x:1014:1015:preferred user name,,,:/home/fazil:/bin/bash
+mami:x:1015:1017:,,,:/home/mami:/bin/bash
+nisha:x:1016:1018:,,,:/home/nisha:/bin/bash
+egg:x:1017:1019:,,,:/home/egg:/bin/bash
+milk:x:1018:1020:,,,:/home/milk:/bin/bash
+sindu:x:1019:1021:,,,:/home/sindu:/bin/bash
+nafeesa8642@Nafee:/$ cd
+nafeesa8642@Nafee:~$ sudo adduser madhuri
+[sudo] password for nafeesa8642:
+Sorry, try again.
+[sudo] password for nafeesa8642:
+Sorry, try again.
+[sudo] password for nafeesa8642:
+Adding user `madhuri' ...
+Adding new group `madhuri' (1023) ...
+Adding new user `madhuri' (1020) with group `madhuri' ...
+Creating home directory `/home/madhuri' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for madhuri
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+nafeesa8642@Nafee:~$ su - madhuri
+Password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.10.16.3-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Jan 20 10:35:00 IST 2022
+
+  System load:  0.12               Processes:             15
+  Usage of /:   0.7% of 250.98GB   Users logged in:       0
+  Memory usage: 9%                 IPv4 address for eth0: 172.23.97.110
+  Swap usage:   0%
+
+99 updates can be applied immediately.
+39 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+This message is shown once a day. To disable it please create the
+/home/madhuri/.hushlogin file.
+madhuri@Nafee:~$ su - nafeesa8642
+Password:
+alias ll='ls -alF'
+-bash: alias: =ls -l: not found
+alias la='ls -A'
+-bash: alias: =ls -a: not found
+-bash: alias: lh: not found
+-bash: alias: =ls -h: not found
+nafeesa8642@Nafee:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,nafeesa8642
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:nafeesa8642
+fax:x:21:
+voice:x:22:
+cdrom:x:24:nafeesa8642
+floppy:x:25:nafeesa8642
+tape:x:26:
+sudo:x:27:nafeesa8642,fazil
+audio:x:29:nafeesa8642
+dip:x:30:nafeesa8642
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:nafeesa8642
+sasl:x:45:
+plugdev:x:46:nafeesa8642
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:nafeesa8642
+lxd:x:118:
+nafeesa8642:x:1000:
+usr1:x:1001:
+usr2:x:1002:
+usr3:x:1003:
+usr4:x:1004:
+user1:x:1005:
+user2:x:1006:
+user3:x:1007:
+user4:x:1008:
+shabnam:x:1009:
+rahib:x:1010:
+pavitra:x:1011:
+pavan:x:1012:
+timjag:x:1013:
+docker:x:1014:nafeesa8642
+fazil:x:1015:
+devops:x:1016:
+mami:x:1017:
+nisha:x:1018:
+egg:x:1019:
+milk:x:1020:
+sindu:x:1021:
+training:x:1022:
+madhuri:x:1023:
+nafeesa8642@Nafee:~$ groupadd
+Usage: groupadd [options] GROUP
+
+Options:
+  -f, --force                   exit successfully if the group already exists,
+                                and cancel -g if the GID is already used
+  -g, --gid GID                 use GID for the new group
+  -h, --help                    display this help message and exit
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -o, --non-unique              allow to create groups with duplicate
+                                (non-unique) GID
+  -p, --password PASSWORD       use this encrypted password for the new group
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       directory prefix
+      --extrausers              Use the extra users database
+nafeesa8642@Nafee:~$ groupmod
+Usage: groupmod [options] GROUP
+
+Options:
+  -g, --gid GID                 change the group ID to GID
+  -h, --help                    display this help message and exit
+  -n, --new-name NEW_GROUP      change the name to NEW_GROUP
+  -o, --non-unique              allow to use a duplicate (non-unique) GID
+  -p, --password PASSWORD       change the password to this (encrypted)
+                                PASSWORD
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+
+nafeesa8642@Nafee:~$ usermod
+Usage: usermod [options] LOGIN
+
+Options:
+  -b, --badnames                allow bad names
+  -c, --comment COMMENT         new value of the GECOS field
+  -d, --home HOME_DIR           new home directory for the user account
+  -e, --expiredate EXPIRE_DATE  set account expiration date to EXPIRE_DATE
+  -f, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -g, --gid GROUP               force use GROUP as new primary group
+  -G, --groups GROUPS           new list of supplementary GROUPS
+  -a, --append                  append the user to the supplemental GROUPS
+                                mentioned by the -G option without removing
+                                the user from other groups
+  -h, --help                    display this help message and exit
+  -l, --login NEW_LOGIN         new value of the login name
+  -L, --lock                    lock the user account
+  -m, --move-home               move contents of the home directory to the
+                                new location (use only with -d)
+  -o, --non-unique              allow using duplicate (non-unique) UID
+  -p, --password PASSWORD       use encrypted password for the new password
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -s, --shell SHELL             new login shell for the user account
+  -u, --uid UID                 new UID for the user account
+  -U, --unlock                  unlock the user account
+  -v, --add-subuids FIRST-LAST  add range of subordinate uids
+  -V, --del-subuids FIRST-LAST  remove range of subordinate uids
+  -w, --add-subgids FIRST-LAST  add range of subordinate gids
+  -W, --del-subgids FIRST-LAST  remove range of subordinate gids
+  -Z, --selinux-user SEUSER     new SELinux user mapping for the user account
+
+nafeesa8642@Nafee:~$ sudo groupadd devopstraining
+nafeesa8642@Nafee:~$ ls
+ABCimpex          hellofunc.sh    myfile.sh           parurole
+args.sh           helloscript.sh  myfilevars.sh       reading.sh
+bash_alias        hi.sh           myfilewithvars.sh   sam.sh
+cont.yml          ifelse.sh       myfilewithvars1.sh  sam.yml
+decision.sh       input.sh        myinfo.txt          sam_orchestrate.yml
+demo.sh           main.yml        myinfo1.txt         samrole
+evenodd.sh        multiples.sh    nafee.yml           selfile.sh
+example.sh        mycmds.sh       nafeesa_playbook    stringdemo.sh
+filewithvars.sh   mycmds.sh.save  nano.save           temp
+food.sh           mycommands.sh   nano.save.1         vardemo.sh
+friends.sh        mydata.sh       odd.sh              whiledemo.sh
+function_demo.sh  mydata1.sh      parent              yourfile
+nafeesa8642@Nafee:~$ ls -il
+total 192
+40739 drwxr-xr-x  3 nafeesa8642 nafeesa8642 4096 Dec 17 13:32 ABCimpex
+97403 -rwxr-xr-x  1 nafeesa8642 nafeesa8642   96 Dec 20 13:23 args.sh
+96830 -rw-r--r--  1 nafeesa8642 nafeesa8642   30 Dec 10 15:44 bash_alias
+37431 -rw-r--r--  1 nafeesa8642 nafeesa8642   61 Dec 15 17:56 cont.yml
+96833 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  323 Dec 13 12:02 decision.sh
+96834 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  120 Dec 13 12:08 demo.sh
+96839 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  137 Dec 13 14:09 evenodd.sh
+96829 -rwxrwxr--  1 nafeesa8642 nafeesa8642  105 Dec 10 15:33 example.sh
+96826 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  135 Dec 10 14:10 filewithvars.sh
+96840 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  189 Dec 13 15:19 food.sh
+96844 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  130 Dec 13 15:06 friends.sh
+96841 -rwxrwxr--  1 nafeesa8642 nafeesa8642  162 Dec 13 17:23 function_demo.sh
+96845 -rwxrwxr--  1 nafeesa8642 nafeesa8642  132 Dec 13 17:28 hellofunc.sh
+96809 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  446 Dec 13 10:32 helloscript.sh
+96831 -rwxr-xr-x  1 nafeesa8642 nafeesa8642   90 Dec 13 12:05 hi.sh
+97405 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  178 Dec 20 13:39 ifelse.sh
+97404 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  170 Dec 20 13:01 input.sh
+96848 -rw-r--r--  1 nafeesa8642 nafeesa8642  539 Dec 16 11:18 main.yml
+96842 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  110 Dec 13 15:01 multiples.sh
+96817 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  116 Dec 10 11:11 mycmds.sh
+96821 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  134 Dec 10 18:11 mycmds.sh.save
+96819 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  113 Dec 10 12:18 mycommands.sh
+96837 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  119 Dec 13 13:23 mydata.sh
+96838 -rwxr-xr-x  1 nafeesa8642 nafeesa8642   90 Dec 13 13:27 mydata1.sh
+96820 -rwxr-xr-x  1 nafeesa8642 nafeesa8642   52 Dec 10 11:18 myfile.sh
+96825 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  144 Dec 10 14:06 myfilevars.sh
+96823 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  135 Dec 10 12:43 myfilewithvars.sh96824 -rw-r--r--  1 nafeesa8642 nafeesa8642  139 Dec 10 13:49 myfilewithvars1.sh
+18033 -rw-r--r--  1 nafeesa8642 nafeesa8642   67 Jan 20 10:24 myinfo.txt
+96810 -rwxr-xr-x  1 nafeesa8642 nafeesa8642   50 Dec 10 10:20 myinfo1.txt
+37429 -rw-r--r--  1 nafeesa8642 nafeesa8642   65 Dec 15 17:54 nafee.yml
+96942 drwxr-xr-x  4 nafeesa8642 nafeesa8642 4096 Dec 16 18:14 nafeesa_playbook
+97131 -rw-------  1 nafeesa8642 nafeesa8642   77 Dec 16 18:14 nano.save
+97132 -rw-------  1 nafeesa8642 nafeesa8642   77 Dec 16 18:14 nano.save.1
+96843 -rwxrwxr--  1 nafeesa8642 nafeesa8642  141 Dec 13 15:11 odd.sh
+18030 drwxr-xr-x  3 nafeesa8642 nafeesa8642 4096 Jan 20 10:21 parent
+96850 drwxr-xr-x 10 nafeesa8642 nafeesa8642 4096 Dec 15 17:38 parurole
+96828 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  131 Jan  7 18:01 reading.sh
+18028 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  122 Jan  7 17:59 sam.sh
+96847 -rw-r--r--  1 nafeesa8642 nafeesa8642  105 Dec 15 17:21 sam.yml
+96846 -rw-r--r--  1 nafeesa8642 nafeesa8642   87 Dec 16 10:48 sam_orchestrate.yml
+96868 drwxr-xr-x 10 nafeesa8642 nafeesa8642 4096 Dec 15 17:39 samrole
+96813 -rwxr-xr-x  1 nafeesa8642 nafeesa8642   16 Dec 10 10:57 selfile.sh
+96836 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  147 Dec 13 12:41 stringdemo.sh
+18014 drwxr-xr-x  3 nafeesa8642 nafeesa8642 4096 Jan  7 17:34 temp
+96822 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  120 Dec 10 12:33 vardemo.sh
+96835 -rwxr-xr-x  1 nafeesa8642 nafeesa8642  100 Dec 13 12:21 whiledemo.sh
+96818 -rw-r--r--  1 nafeesa8642 nafeesa8642   52 Dec 10 11:17 yourfile
+nafeesa8642@Nafee:~$ ls
+ABCimpex          hellofunc.sh    myfile.sh           parurole
+args.sh           helloscript.sh  myfilevars.sh       reading.sh
+bash_alias        hi.sh           myfilewithvars.sh   sam.sh
+cont.yml          ifelse.sh       myfilewithvars1.sh  sam.yml
+decision.sh       input.sh        myinfo.txt          sam_orchestrate.yml
+demo.sh           main.yml        myinfo1.txt         samrole
+evenodd.sh        multiples.sh    nafee.yml           selfile.sh
+example.sh        mycmds.sh       nafeesa_playbook    stringdemo.sh
+filewithvars.sh   mycmds.sh.save  nano.save           temp
+food.sh           mycommands.sh   nano.save.1         vardemo.sh
+friends.sh        mydata.sh       odd.sh              whiledemo.sh
+function_demo.sh  mydata1.sh      parent              yourfile
+nafeesa8642@Nafee:~$ file parent
+parent: directory
+nafeesa8642@Nafee:~$ file hi.sh
+hi.sh: ASCII text
+nafeesa8642@Nafee:~$ ls -a
+.                          decision.sh        myfilewithvars1.sh
+..                         demo.sh            myinfo.txt
+.ansible                   evenodd.sh         myinfo1.txt
+.aws                       example.sh         nafee.yml
+.azure                     filewithvars.sh    nafeesa_playbook
+.bash_aliases              food.sh            nano.save
+.bash_history              friends.sh         nano.save.1
+.bash_logout               function_demo.sh   odd.sh
+.bashrc                    hellofunc.sh       parent
+.config                    helloscript.sh     parurole
+.docker                    hi.sh              reading.sh
+.gitconfig                 ifelse.sh          sam.sh
+.kube                      input.sh           sam.yml
+.landscape                 main.yml           sam_orchestrate.yml
+.local                     multiples.sh       samrole
+.motd_shown                mycmds.sh          selfile.sh
+.profile                   mycmds.sh.save     stringdemo.sh
+.python_history            mycommands.sh      temp
+.sudo_as_admin_successful  mydata.sh          vardemo.sh
+ABCimpex                   mydata1.sh         whiledemo.sh
+args.sh                    myfile.sh          yourfile
+bash_alias                 myfilevars.sh
+cont.yml                   myfilewithvars.sh
+nafeesa8642@Nafee:~$ ls -l
+total 192
+drwxr-xr-x  3 nafeesa8642 nafeesa8642 4096 Dec 17 13:32 ABCimpex
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642   96 Dec 20 13:23 args.sh
+-rw-r--r--  1 nafeesa8642 nafeesa8642   30 Dec 10 15:44 bash_alias
+-rw-r--r--  1 nafeesa8642 nafeesa8642   61 Dec 15 17:56 cont.yml
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  323 Dec 13 12:02 decision.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  120 Dec 13 12:08 demo.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  137 Dec 13 14:09 evenodd.sh
+-rwxrwxr--  1 nafeesa8642 nafeesa8642  105 Dec 10 15:33 example.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  135 Dec 10 14:10 filewithvars.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  189 Dec 13 15:19 food.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  130 Dec 13 15:06 friends.sh
+-rwxrwxr--  1 nafeesa8642 nafeesa8642  162 Dec 13 17:23 function_demo.sh
+-rwxrwxr--  1 nafeesa8642 nafeesa8642  132 Dec 13 17:28 hellofunc.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  446 Dec 13 10:32 helloscript.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642   90 Dec 13 12:05 hi.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  178 Dec 20 13:39 ifelse.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  170 Dec 20 13:01 input.sh
+-rw-r--r--  1 nafeesa8642 nafeesa8642  539 Dec 16 11:18 main.yml
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  110 Dec 13 15:01 multiples.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  116 Dec 10 11:11 mycmds.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  134 Dec 10 18:11 mycmds.sh.save
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  113 Dec 10 12:18 mycommands.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  119 Dec 13 13:23 mydata.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642   90 Dec 13 13:27 mydata1.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642   52 Dec 10 11:18 myfile.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  144 Dec 10 14:06 myfilevars.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  135 Dec 10 12:43 myfilewithvars.sh
+-rw-r--r--  1 nafeesa8642 nafeesa8642  139 Dec 10 13:49 myfilewithvars1.sh
+-rw-r--r--  1 nafeesa8642 nafeesa8642   67 Jan 20 10:24 myinfo.txt
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642   50 Dec 10 10:20 myinfo1.txt
+-rw-r--r--  1 nafeesa8642 nafeesa8642   65 Dec 15 17:54 nafee.yml
+drwxr-xr-x  4 nafeesa8642 nafeesa8642 4096 Dec 16 18:14 nafeesa_playbook
+-rw-------  1 nafeesa8642 nafeesa8642   77 Dec 16 18:14 nano.save
+-rw-------  1 nafeesa8642 nafeesa8642   77 Dec 16 18:14 nano.save.1
+-rwxrwxr--  1 nafeesa8642 nafeesa8642  141 Dec 13 15:11 odd.sh
+drwxr-xr-x  3 nafeesa8642 nafeesa8642 4096 Jan 20 10:21 parent
+drwxr-xr-x 10 nafeesa8642 nafeesa8642 4096 Dec 15 17:38 parurole
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  131 Jan  7 18:01 reading.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  122 Jan  7 17:59 sam.sh
+-rw-r--r--  1 nafeesa8642 nafeesa8642  105 Dec 15 17:21 sam.yml
+-rw-r--r--  1 nafeesa8642 nafeesa8642   87 Dec 16 10:48 sam_orchestrate.yml
+drwxr-xr-x 10 nafeesa8642 nafeesa8642 4096 Dec 15 17:39 samrole
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642   16 Dec 10 10:57 selfile.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  147 Dec 13 12:41 stringdemo.sh
+drwxr-xr-x  3 nafeesa8642 nafeesa8642 4096 Jan  7 17:34 temp
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  120 Dec 10 12:33 vardemo.sh
+-rwxr-xr-x  1 nafeesa8642 nafeesa8642  100 Dec 13 12:21 whiledemo.sh
+-rw-r--r--  1 nafeesa8642 nafeesa8642   52 Dec 10 11:17 yourfile
+nafeesa8642@Nafee:~$ ls
+ABCimpex          hellofunc.sh    myfile.sh           parurole
+args.sh           helloscript.sh  myfilevars.sh       reading.sh
+bash_alias        hi.sh           myfilewithvars.sh   sam.sh
+cont.yml          ifelse.sh       myfilewithvars1.sh  sam.yml
+decision.sh       input.sh        myinfo.txt          sam_orchestrate.yml
+demo.sh           main.yml        myinfo1.txt         samrole
+evenodd.sh        multiples.sh    nafee.yml           selfile.sh
+example.sh        mycmds.sh       nafeesa_playbook    stringdemo.sh
+filewithvars.sh   mycmds.sh.save  nano.save           temp
+food.sh           mycommands.sh   nano.save.1         vardemo.sh
+friends.sh        mydata.sh       odd.sh              whiledemo.sh
+function_demo.sh  mydata1.sh      parent              yourfile
+nafeesa8642@Nafee:~$ cd temp
+nafeesa8642@Nafee:~/temp$ ls
+foldr1  mix.txt  sam1.txt
+nafeesa8642@Nafee:~/temp$ chmod o+wrx mix.txt
+nafeesa8642@Nafee:~/temp$ ls -lh mix.txt
+-rw-r--rwx 1 nafeesa8642 nafeesa8642 90 Jan 20 10:29 mix.txt
+nafeesa8642@Nafee:~/temp$ cd ..
+nafeesa8642@Nafee:~$ ls -alh | grep temp
+drwxr-xr-x  3 nafeesa8642 nafeesa8642 4.0K Jan  7 17:34 temp
+nafeesa8642@Nafee:~$ cd parent
+nafeesa8642@Nafee:~/parent$ ls
+child
+nafeesa8642@Nafee:~/parent$ touch child2
+nafeesa8642@Nafee:~/parent$ ls
+child  child2
+nafeesa8642@Nafee:~/parent$ cat child2
+nafeesa8642@Nafee:~/parent$ ls -alh child2
+-rw-rw-r-- 1 nafeesa8642 nafeesa8642 0 Jan 20 10:43 child2
+nafeesa8642@Nafee:~/parent$ nano child2
+nafeesa8642@Nafee:~/parent$ cat child2
+myfile.txt
+mytemp
+tempy
+Zing Zing Amazing!!
+
+nafeesa8642@Nafee:~/parent$ rm -- child
+rm: cannot remove 'child': Is a directory
+nafeesa8642@Nafee:~/parent$ cd child
+nafeesa8642@Nafee:~/parent/child$ ls
+nafeesa8642@Nafee:~/parent/child$ touch fsam.txt
+nafeesa8642@Nafee:~/parent/child$ ls
+fsam.txt
+nafeesa8642@Nafee:~/parent/child$ rm -- fsam.txt
+nafeesa8642@Nafee:~/parent/child$ ls
+nafeesa8642@Nafee:~/parent/child$ cd ..
+nafeesa8642@Nafee:~/parent$ cd ..
+nafeesa8642@Nafee:~$ find . -name *.txt
+find: paths must precede expression: `myinfo1.txt'
+find: possible unquoted pattern after predicate `-name'?
+nafeesa8642@Nafee:~$ find . -name *.*
+find: paths must precede expression: `cont.yml'
+find: possible unquoted pattern after predicate `-name'?
+nafeesa8642@Nafee:~$ find . - name *.*
+.
+./myfile.sh
+./.python_history
+./.azure
+./vardemo.sh
+./mydata.sh
+./hi.sh
+./nafee.yml
+./samrole
+./samrole/tasks
+./samrole/tasks/main.yml
+./samrole/defaults
+./samrole/defaults/main.yml
+./samrole/meta
+./samrole/meta/main.yml
+./samrole/tests
+./samrole/tests/inventory
+./samrole/tests/test.yml
+./samrole/README.md
+./samrole/templates
+./samrole/handlers
+./samrole/handlers/main.yml
+./samrole/vars
+./samrole/vars/main.yml
+./samrole/.travis.yml
+./samrole/files
+./temp
+./temp/foldr1
+./temp/foldr1/newtmp
+./temp/foldr1/mix.txt
+./temp/foldr1/foldr2
+./temp/mix.txt
+./temp/sam1.txt
+./filewithvars.sh
+./helloscript.sh
+./.landscape
+./.landscape/sysinfo.log
+./sam.sh
+./.sudo_as_admin_successful
+./mydata1.sh
+./.gitconfig
+./.ansible
+./.ansible/galaxy_cache
+./.ansible/tmp
+./mycmds.sh
+./.kube
+./.kube/config
+./ABCimpex
+./ABCimpex/InitialGalaxy
+./ABCimpex/InitialGalaxy/Galaxyinfor.txt
+./myinfo1.txt
+./demo.sh
+./evenodd.sh
+./sam.yml
+./.bash_history
+./function_demo.sh
+./stringdemo.sh
+./hellofunc.sh
+./myinfo.txt
+./food.sh
+./mycommands.sh
+./.motd_shown
+./ifelse.sh
+./.config
+./.config/procps
+./.config/htop
+./.config/htop/htoprc
+./main.yml
+./args.sh
+./.aws
+./.docker
+./.docker/scan
+./.docker/scan/config.json
+./.docker/desktop
+./.docker/contexts
+./.docker/features.json
+./.docker/config.json
+./.docker/run
+./.docker/run/docker-cli-api.sock
+./cont.yml
+./nano.save
+./.profile
+./decision.sh
+./whiledemo.sh
+./.bash_logout
+./sam_orchestrate.yml
+./yourfile
+./nano.save.1
+./myfilewithvars1.sh
+./multiples.sh
+./.bashrc
+./reading.sh
+./.bash_aliases
+./myfilevars.sh
+./.local
+./.local/share
+./.local/share/nano
+./mycmds.sh.save
+./friends.sh
+./myfilewithvars.sh
+./parurole
+./parurole/tasks
+./parurole/tasks/main.yml
+./parurole/defaults
+./parurole/defaults/main.yml
+./parurole/meta
+./parurole/meta/main.yml
+./parurole/tests
+./parurole/tests/inventory
+./parurole/tests/test.yml
+./parurole/README.md
+./parurole/templates
+./parurole/handlers
+./parurole/handlers/main.yml
+./parurole/vars
+./parurole/vars/main.yml
+./parurole/.travis.yml
+./parurole/files
+./selfile.sh
+./bash_alias
+./input.sh
+./example.sh
+./odd.sh
+./parent
+./parent/child2
+./parent/child
+./nafeesa_playbook
+./nafeesa_playbook/nafeesa_orchestrate.yml
+./nafeesa_playbook/start-tomcat
+./nafeesa_playbook/start-tomcat/tasks
+./nafeesa_playbook/start-tomcat/tasks/main.yml
+./nafeesa_playbook/start-tomcat/defaults
+./nafeesa_playbook/start-tomcat/defaults/main.yml
+./nafeesa_playbook/start-tomcat/meta
+./nafeesa_playbook/start-tomcat/meta/main.yml
+./nafeesa_playbook/start-tomcat/tests
+./nafeesa_playbook/start-tomcat/tests/inventory
+./nafeesa_playbook/start-tomcat/tests/test.yml
+./nafeesa_playbook/start-tomcat/README.md
+./nafeesa_playbook/start-tomcat/templates
+./nafeesa_playbook/start-tomcat/handlers
+./nafeesa_playbook/start-tomcat/handlers/main.yml
+./nafeesa_playbook/start-tomcat/vars
+./nafeesa_playbook/start-tomcat/vars/main.yml
+./nafeesa_playbook/start-tomcat/.travis.yml
+./nafeesa_playbook/start-tomcat/files
+./nafeesa_playbook/install-tomcat
+./nafeesa_playbook/install-tomcat/tasks
+./nafeesa_playbook/install-tomcat/tasks/main.yml
+./nafeesa_playbook/install-tomcat/defaults
+./nafeesa_playbook/install-tomcat/defaults/main.yml
+./nafeesa_playbook/install-tomcat/meta
+./nafeesa_playbook/install-tomcat/meta/main.yml
+./nafeesa_playbook/install-tomcat/tests
+./nafeesa_playbook/install-tomcat/tests/inventory
+./nafeesa_playbook/install-tomcat/tests/test.yml
+./nafeesa_playbook/install-tomcat/README.md
+./nafeesa_playbook/install-tomcat/templates
+./nafeesa_playbook/install-tomcat/handlers
+./nafeesa_playbook/install-tomcat/handlers/main.yml
+./nafeesa_playbook/install-tomcat/vars
+./nafeesa_playbook/install-tomcat/vars/main.yml
+./nafeesa_playbook/install-tomcat/.travis.yml
+./nafeesa_playbook/install-tomcat/files
+find: ‘-’: No such file or directory
+find: ‘name’: No such file or directory
+args.sh
+cont.yml
+decision.sh
+demo.sh
+evenodd.sh
+example.sh
+filewithvars.sh
+food.sh
+friends.sh
+function_demo.sh
+hellofunc.sh
+helloscript.sh
+hi.sh
+ifelse.sh
+input.sh
+main.yml
+multiples.sh
+mycmds.sh
+mycmds.sh.save
+mycommands.sh
+mydata.sh
+mydata1.sh
+myfile.sh
+myfilevars.sh
+myfilewithvars.sh
+myfilewithvars1.sh
+myinfo.txt
+myinfo1.txt
+nafee.yml
+nano.save
+nano.save.1
+odd.sh
+reading.sh
+sam.sh
+sam.yml
+sam_orchestrate.yml
+selfile.sh
+stringdemo.sh
+vardemo.sh
+whiledemo.sh
+nafeesa8642@Nafee:~$ find . - name *.txt
+.
+./myfile.sh
+./.python_history
+./.azure
+./vardemo.sh
+./mydata.sh
+./hi.sh
+./nafee.yml
+./samrole
+./samrole/tasks
+./samrole/tasks/main.yml
+./samrole/defaults
+./samrole/defaults/main.yml
+./samrole/meta
+./samrole/meta/main.yml
+./samrole/tests
+./samrole/tests/inventory
+./samrole/tests/test.yml
+./samrole/README.md
+./samrole/templates
+./samrole/handlers
+./samrole/handlers/main.yml
+./samrole/vars
+./samrole/vars/main.yml
+./samrole/.travis.yml
+./samrole/files
+./temp
+./temp/foldr1
+./temp/foldr1/newtmp
+./temp/foldr1/mix.txt
+./temp/foldr1/foldr2
+./temp/mix.txt
+./temp/sam1.txt
+./filewithvars.sh
+./helloscript.sh
+./.landscape
+./.landscape/sysinfo.log
+./sam.sh
+./.sudo_as_admin_successful
+./mydata1.sh
+./.gitconfig
+./.ansible
+./.ansible/galaxy_cache
+./.ansible/tmp
+./mycmds.sh
+./.kube
+./.kube/config
+./ABCimpex
+./ABCimpex/InitialGalaxy
+./ABCimpex/InitialGalaxy/Galaxyinfor.txt
+./myinfo1.txt
+./demo.sh
+./evenodd.sh
+./sam.yml
+./.bash_history
+./function_demo.sh
+./stringdemo.sh
+./hellofunc.sh
+./myinfo.txt
+./food.sh
+./mycommands.sh
+./.motd_shown
+./ifelse.sh
+./.config
+./.config/procps
+./.config/htop
+./.config/htop/htoprc
+./main.yml
+./args.sh
+./.aws
+./.docker
+./.docker/scan
+./.docker/scan/config.json
+./.docker/desktop
+./.docker/contexts
+./.docker/features.json
+./.docker/config.json
+./.docker/run
+./.docker/run/docker-cli-api.sock
+./cont.yml
+./nano.save
+./.profile
+./decision.sh
+./whiledemo.sh
+./.bash_logout
+./sam_orchestrate.yml
+./yourfile
+./nano.save.1
+./myfilewithvars1.sh
+./multiples.sh
+./.bashrc
+./reading.sh
+./.bash_aliases
+./myfilevars.sh
+./.local
+./.local/share
+./.local/share/nano
+./mycmds.sh.save
+./friends.sh
+./myfilewithvars.sh
+./parurole
+./parurole/tasks
+./parurole/tasks/main.yml
+./parurole/defaults
+./parurole/defaults/main.yml
+./parurole/meta
+./parurole/meta/main.yml
+./parurole/tests
+./parurole/tests/inventory
+./parurole/tests/test.yml
+./parurole/README.md
+./parurole/templates
+./parurole/handlers
+./parurole/handlers/main.yml
+./parurole/vars
+./parurole/vars/main.yml
+./parurole/.travis.yml
+./parurole/files
+./selfile.sh
+./bash_alias
+./input.sh
+./example.sh
+./odd.sh
+./parent
+./parent/child2
+./parent/child
+./nafeesa_playbook
+./nafeesa_playbook/nafeesa_orchestrate.yml
+./nafeesa_playbook/start-tomcat
+./nafeesa_playbook/start-tomcat/tasks
+./nafeesa_playbook/start-tomcat/tasks/main.yml
+./nafeesa_playbook/start-tomcat/defaults
+./nafeesa_playbook/start-tomcat/defaults/main.yml
+./nafeesa_playbook/start-tomcat/meta
+./nafeesa_playbook/start-tomcat/meta/main.yml
+./nafeesa_playbook/start-tomcat/tests
+./nafeesa_playbook/start-tomcat/tests/inventory
+./nafeesa_playbook/start-tomcat/tests/test.yml
+./nafeesa_playbook/start-tomcat/README.md
+./nafeesa_playbook/start-tomcat/templates
+./nafeesa_playbook/start-tomcat/handlers
+./nafeesa_playbook/start-tomcat/handlers/main.yml
+./nafeesa_playbook/start-tomcat/vars
+./nafeesa_playbook/start-tomcat/vars/main.yml
+./nafeesa_playbook/start-tomcat/.travis.yml
+./nafeesa_playbook/start-tomcat/files
+./nafeesa_playbook/install-tomcat
+./nafeesa_playbook/install-tomcat/tasks
+./nafeesa_playbook/install-tomcat/tasks/main.yml
+./nafeesa_playbook/install-tomcat/defaults
+./nafeesa_playbook/install-tomcat/defaults/main.yml
+./nafeesa_playbook/install-tomcat/meta
+./nafeesa_playbook/install-tomcat/meta/main.yml
+./nafeesa_playbook/install-tomcat/tests
+./nafeesa_playbook/install-tomcat/tests/inventory
+./nafeesa_playbook/install-tomcat/tests/test.yml
+./nafeesa_playbook/install-tomcat/README.md
+./nafeesa_playbook/install-tomcat/templates
+./nafeesa_playbook/install-tomcat/handlers
+./nafeesa_playbook/install-tomcat/handlers/main.yml
+./nafeesa_playbook/install-tomcat/vars
+./nafeesa_playbook/install-tomcat/vars/main.yml
+./nafeesa_playbook/install-tomcat/.travis.yml
+./nafeesa_playbook/install-tomcat/files
+find: ‘-’: No such file or directory
+find: ‘name’: No such file or directory
+myinfo.txt
+myinfo1.txt
+nafeesa8642@Nafee:~$ find . d -name "t*"
+./samrole/tasks
+./samrole/tests
+./samrole/tests/test.yml
+./samrole/templates
+./temp
+./.ansible/tmp
+./parurole/tasks
+./parurole/tests
+./parurole/tests/test.yml
+./parurole/templates
+./nafeesa_playbook/start-tomcat/tasks
+./nafeesa_playbook/start-tomcat/tests
+./nafeesa_playbook/start-tomcat/tests/test.yml
+./nafeesa_playbook/start-tomcat/templates
+./nafeesa_playbook/install-tomcat/tasks
+./nafeesa_playbook/install-tomcat/tests
+./nafeesa_playbook/install-tomcat/tests/test.yml
+./nafeesa_playbook/install-tomcat/templates
+find: ‘d’: No such file or directory
+nafeesa8642@Nafee:~$ cd temp
+nafeesa8642@Nafee:~/temp$ ls
+foldr1  mix.txt  sam1.txt
+nafeesa8642@Nafee:~/temp$ find . -name foldr1 -delete
+find: cannot delete ‘./foldr1’: Directory not empty
+nafeesa8642@Nafee:~/temp$ find . -name mix.txt -delete
+nafeesa8642@Nafee:~/temp$ ls
+foldr1  sam1.txt
+nafeesa8642@Nafee:~/temp$ cd ..
+nafeesa8642@Nafee:~$ free
+              total        used        free      shared  buff/cache   availableMem:        6427128      574980     4378616      374384     1473532     5245196Swap:       2097152           0     2097152
+nafeesa8642@Nafee:~$ uptime
+ 10:50:23 up  1:19,  0 users,  load average: 0.10, 0.05, 0.01
+nafeesa8642@Nafee:~$ top
+top - 10:52:23 up  1:21,  0 users,  load average: 0.04, 0.04, 0.00
+Tasks:  14 total,   1 running,  13 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.0 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 s
+MiB Mem :   6276.5 total,   4275.3 free,    562.0 used,   1439.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5121.8 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0     900    524    464 S   0.0   0.0   0:00.07 init
+  127 root      20   0     900     80     20 S   0.0   0.0   0:00.00 init
+  128 root      20   0     900     80     20 S   0.0   0.0   0:00.06 init
+  129 root      20   0 1605580  30908  13596 S   0.0   0.5   0:03.11 docker-d+
+  140 root      20   0     900     80     20 S   0.0   0.0   0:00.00 init
+  141 nafeesa+  20   0  764776  48016  29392 S   0.0   0.7   0:02.25 docker
+  168 root      20   0     900     80     20 S   0.0   0.0   0:00.00 init
+  169 root      20   0     900     80     20 S   0.0   0.0   0:01.12 init
+  170 nafeesa+  20   0   10184   5068   3308 S   0.0   0.1   0:00.63 bash
+  311 root      20   0   10512   4184   3468 S   0.0   0.1   0:00.05 su
+  312 madhuri   20   0   10032   5008   3304 S   0.0   0.1   0:00.17 bash
+  375 root      20   0   10512   4116   3400 S   0.0   0.1   0:00.04 su
+  376 nafeesa+  20   0   10172   5164   3404 S   0.0   0.1   0:00.50 bash
+  437 nafeesa+  20   0   10876   3660   3152 R   0.0   0.1   0:00.02 top
+
+
+
+
+
+
+nafeesa8642@Nafee:~$ Htop
+
+Command 'Htop' not found, did you mean:
+
+  command 'itop' from deb itop (0.1-4build1)
+  command 'utop' from deb utop (2.4.3-1build1)
+  command 'dtop' from deb diod (1.0.24-4)
+  command 'ptop' from deb fp-utils-3.0.4 (3.0.4+dfsg-23)
+  command 'ptop' from deb px (1.0.29-1)
+  command 'top' from deb procps (2:3.3.16-1ubuntu2.3)
+  command 'htop' from deb htop (2.2.0-2build1)
+  command 'ctop' from deb ctop (1.0.0-2)
+  command 'qtop' from deb qtop (2.3.4-2build1)
+  command 'atop' from deb atop (2.4.0-3)
+
+Try: sudo apt install <deb name>
+
+nafeesa8642@Nafee:~$ htop
+nafeesa8642@Nafee:~$ env
+SHELL=/bin/bash
+PWD=/home/nafeesa8642
+LOGNAME=nafeesa8642
+HOME=/home/nafeesa8642
+LANG=C.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=nafeesa8642
+SHLVL=1
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+MAIL=/var/mail/nafeesa8642
+_=/usr/bin/env
+OLDPWD=/home/nafeesa8642/temp
+nafeesa8642@Nafee:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+/dev/sdd       263174212  1925936 247810120   1% /
+tmpfs            3213564   373276   2840288  12% /mnt/wsl
+tools          153087996 80026864  73061132  53% /init
+none             3211480        0   3211480   0% /dev
+none             3213564       12   3213552   1% /run
+none             3213564        0   3213564   0% /run/lock
+none             3213564        0   3213564   0% /run/shm
+none             3213564        0   3213564   0% /run/user
+tmpfs            3213564        0   3213564   0% /sys/fs/cgroup
+drivers        153087996 80026864  73061132  53% /usr/lib/wsl/drivers
+lib            153087996 80026864  73061132  53% /usr/lib/wsl/lib
+C:\            153087996 80026864  73061132  53% /mnt/c
+F:\            486399996  1423592 484976404   1% /mnt/f
+G:\            665599996  6164740 659435256   1% /mnt/g
+H:\            647911420   161256 647750164   1% /mnt/h
+/dev/sdc       263174212  2606876 247129180   2% /mnt/wsl/docker-desktop-data/isocache
+none             3213564       16   3213548   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdb       263174212   125928 249610128   1% /mnt/wsl/docker-desktop/docker-desktop-proxy
+/dev/loop0        341422   341422         0 100% /mnt/wsl/docker-desktop/cli-tools
+nafeesa8642@Nafee:~$ lst
+
+Command 'lst' not found, but there are 20 similar ones.
+
+nafeesa8642@Nafee:~$ last
+
+wtmp begins Thu Dec  9 10:55:38 2021
+nafeesa8642@Nafee:~$ ps
+  PID TTY          TIME CMD
+  170 pts/2    00:00:00 bash
+  376 pts/2    00:00:00 bash
+  458 pts/2    00:00:00 ps
+nafeesa8642@Nafee:~$ info
+nafeesa8642@Nafee:~$ ansible all -m ping --ask-all
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD]
+               [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts]
+               [-l SUBSET] [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE]
+               [-k] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER]
+               [-c CONNECTION] [-T TIMEOUT]
+               [--ssh-common-args SSH_COMMON_ARGS]
+               [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS]
+               [--ssh-extra-args SSH_EXTRA_ARGS] [-C] [--syntax-check] [-D]
+               [-e EXTRA_VARS] [--vault-id VAULT_IDS]
+               [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES]
+               [-f FORKS] [-M MODULE_PATH] [--playbook-dir BASEDIR]
+               [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS]
+               [-m MODULE_NAME]
+               pattern
+ansible: error: unrecognized arguments: --ask-all
+
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD]
+               [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts]
+               [-l SUBSET] [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE]
+               [-k] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER]
+               [-c CONNECTION] [-T TIMEOUT]
+               [--ssh-common-args SSH_COMMON_ARGS]
+               [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS]
+               [--ssh-extra-args SSH_EXTRA_ARGS] [-C] [--syntax-check] [-D]
+               [-e EXTRA_VARS] [--vault-id VAULT_IDS]
+               [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES]
+               [-f FORKS] [-M MODULE_PATH] [--playbook-dir BASEDIR]
+               [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS]
+               [-m MODULE_NAME]
+               pattern
+
+Define and run a single task 'playbook' against a set of hosts
+
+positional arguments:
+  pattern               host pattern
+
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --list-hosts          outputs a list of matching hosts; does not execute
+                        anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use playbooks, use this as a
+                        substitute playbook directory.This sets the relative
+                        path for many features including roles/ group_vars/
+                        etc.
+  --syntax-check        perform a syntax check on the playbook, but do not
+                        execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in seconds, must be positive
+                        integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version number, config file location,
+                        configured module search path, module location,
+                        executable location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing after X seconds
+                        (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some
+                        of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the
+                        differences in those files; works great with --check
+  -M MODULE_PATH, --module-path MODULE_PATH
+                        prepend colon-separated path(s) to module library (de
+                        fault=~/.ansible/plugins/modules:/usr/share/ansible/p
+                        lugins/modules)
+  -P POLL_INTERVAL, --poll POLL_INTERVAL
+                        set the poll interval if using -B (default=15)
+  -a MODULE_ARGS, --args MODULE_ARGS
+                        The action's options in space separated k=v format:
+                        -a 'opt1=val1 opt2=val2'
+  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON,
+                        if filename prepend with @
+  -f FORKS, --forks FORKS
+                        specify number of parallel processes to use
+                        (default=5)
+  -h, --help            show this help message and exit
+  -i INVENTORY, --inventory INVENTORY, --inventory-file INVENTORY
+                        specify inventory host path or comma separated host
+                        list. --inventory-file is deprecated
+  -l SUBSET, --limit SUBSET
+                        further limit selected hosts to an additional pattern
+  -m MODULE_NAME, --module-name MODULE_NAME
+                        Name of the action to execute (default=command)
+  -o, --one-line        condense output
+  -t TREE, --tree TREE  log output to this directory
+  -v, --verbose         verbose mode (-vvv for more, -vvvv to enable
+                        connection debugging)
+
+Privilege Escalation Options:
+  control how and which user you become as on target hosts
+
+  --become-method BECOME_METHOD
+                        privilege escalation method to use (default=sudo),
+                        use `ansible-doc -t become -l` to list valid choices.
+  --become-user BECOME_USER
+                        run operations as this user (default=root)
+  -K, --ask-become-pass
+                        ask for privilege escalation password
+  -b, --become          run operations with become (does not imply password
+                        prompting)
+
+Connection Options:
+  control as whom and how to connect to hosts
+
+  --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
+                        use this file to authenticate the connection
+  --scp-extra-args SCP_EXTRA_ARGS
+                        specify extra arguments to pass to scp only (e.g. -l)
+  --sftp-extra-args SFTP_EXTRA_ARGS
+                        specify extra arguments to pass to sftp only (e.g.
+                        -f, -l)
+  --ssh-common-args SSH_COMMON_ARGS
+                        specify common arguments to pass to sftp/scp/ssh
+                        (e.g. ProxyCommand)
+  --ssh-extra-args SSH_EXTRA_ARGS
+                        specify extra arguments to pass to ssh only (e.g. -R)
+  -T TIMEOUT, --timeout TIMEOUT
+                        override the connection timeout in seconds
+                        (default=10)
+  -c CONNECTION, --connection CONNECTION
+                        connection type to use (default=smart)
+  -k, --ask-pass        ask for connection password
+  -u REMOTE_USER, --user REMOTE_USER
+                        connect as this user (default=None)
+
+Some actions do not make sense in Ad-Hoc (include, meta, etc)
